@@ -1,0 +1,4 @@
+form[name=previewform] tbody{display:none;}
+body>#gb, body>#gt-c{
+	display:none;
+}
