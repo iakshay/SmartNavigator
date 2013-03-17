@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+	<title>Options Page | Smart Navigator</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Smart Navigator</h1>
+		<!-- earlier options here -->
+		<div id="tags"></div>
+		<section id="newtag">
+			<h3>Add new tag</h3>
+			<form>
+				<input type="text" id="tag" placeholder="Tag Name">
+				<div id="websites">
+					<h4>Websites</h4>
+					<input type="text" id="w1" placeholder="http://example.com" />
+					<input type="text" id="w2" placeholder="http://example.com" />
+				</div>
+				<button id="add">+</button>
+
+				<input type="submit" id="submit" value="Create Tag" />
+			</form>
+		</section>
+		<h3>Usage</h3>
+		<p>Press <em>⌘ + Shift + S</em> on OSX, and <em>Ctrl + Shift + S</em> on Windows</p>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>
+

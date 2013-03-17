@@ -1,5 +1,17 @@
-#include{display:none !important;}
-
-body>#gb, body>#gt-c{
-	display:none;
-}
+input{display:block;}
+body{background:#eee;font: 16px 'Helvetica', Arial;font-weight:300;}
+#wrapper{width:600px;background:#fff;padding:10px;margin:20px auto;}
+#wrapper h3{text-transform:uppercase;font-size:24px;}
+.item{overflow:hidden;border-bottom:1px solid #eee;transition:background 0.7s;}
+.item:hover{background:tomato;color:#fff;}
+.item ul{list-style:none;}
+.item li{padding-bottom:10px;font-style: italic;}
+.col-1{float:left;width:40%;padding-left:20px;box-sizing:border-box}
+.col-2{float:left;width:50%}
+#newtag{background:#eee;padding:5px;10px;overflow:hidden;}
+#newtag h3{width:50%;display:block;float:left;padding-left:10px;box-sizing:border-box;}
+#newtag form{float:left;width:50%;margin-top:20px;}
+#newtag h4{font-style:italic;font-weight:300;margin:10px}
+input{border:1px solid #ccc;padding:10px;width:200px;margin-bottom:10px;}
+input[type=submit]{background:tomato;color:#fff;width:220px;}
+button{background:tomato;border:0;color:#fff;padding:10px;width:30px;margin-bottom:10px;height:30px;line-height:10px;}
