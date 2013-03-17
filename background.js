@@ -26,7 +26,7 @@ chrome.extension.onMessage.addListener(
     var splitTag = request.value.split(' ')[0];
     var splitRemainder = request.value.substring(splitTag.length+1);
     var tabs = options[splitTag];
-    if(tabs !== undefined){
+    if(tabs !== 'undefined'){
         tabs.forEach(function(e, i){
           if(e.indexOf('{query}') >= 0){
             e = e.split('{query}');
