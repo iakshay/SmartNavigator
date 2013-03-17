@@ -26,17 +26,18 @@ chrome.extension.onMessage.addListener(
     var splitTag = request.value.split(' ')[0];
     var splitRemainder = request.value.substring(splitTag.length+1);
     var tabs = options[splitTag];
-    if(tabs !== 'undefined'){
-        tabs.forEach(function(e, i){
-          if(e.indexOf('{query}') >= 0){
-            e = e.split('{query}');
-            e = e[0] + splitRemainder + e[1];
-          }
-          chrome.tabs.create({url: e});
-        });
-    }else{
+    console.log(tabs);
+    if(typeof tabs == 'undefined'){
         console.log('foo');
         chrome.tabs.create({url: 'http://google.com/search?q='+request.value});
+    }else{
+        tabs.forEach(function(e){
+            if(e.indexOf('{query}') >= 0){
+                e = e.split('{query}');
+                e = e[0] + splitRemainder + e[1];
+            }
+            chrome.tabs.create({url: e});
+        });
     }
       sendResponse({farewell: "goodbye"});
  });
