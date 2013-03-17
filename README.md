@@ -3,8 +3,7 @@
 A Google Chrome extension for smart navigation while browsing with Speech support.
 
 ##Shortcuts  
-- *Ctrl + Shift + S* on WINDOWS
-- *Cmd + Shift + S* on OSX
+*Ctrl + Shift + S*
 
 ##Features  
 1. User Customisable tags to access multiple websites in one go.

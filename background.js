@@ -17,9 +17,6 @@ var callback = function(event) {
 
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
-   // console.log(sender.tab ?
-                "from a content script:" + sender.tab.url :
-                "from the extension");
 
 	var options = JSON.parse(localStorage.options);
     request.value = request.value.toLowerCase();
