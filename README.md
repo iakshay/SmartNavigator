@@ -1,9 +1,8 @@
 #Smart Navigator  
 
-##Abstract:  
-A Google Chrome extenstion for smart navigation while browsing with Speech support.
+A Google Chrome extension for smart navigation while browsing with Speech support.
 
-##Shortcuts:  
+##Shortcuts  
 - *Ctrl + Shift + S* on WINDOWS
 - *Cmd + Shift + S* on OSX
 
@@ -13,4 +12,4 @@ A Google Chrome extenstion for smart navigation while browsing with Speech suppo
 2. Support for specific tags: Shop {query} searches the 	to run same query on multiple sites.
 4. Text to Speech support
 
-*Inspired by Alfred for OSX*
+*Inspired from Alfred for OSX*
