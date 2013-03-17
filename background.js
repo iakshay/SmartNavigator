@@ -1,5 +1,5 @@
 'use strict';
-console.log('Hello World');
+//console.log('Hello World');
 /*window.onkeydown = function(e){
 	console.log('Key Press');
 };
@@ -17,7 +17,7 @@ var callback = function(event) {
 
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
-    console.log(sender.tab ?
+   // console.log(sender.tab ?
                 "from a content script:" + sender.tab.url :
                 "from the extension");
 

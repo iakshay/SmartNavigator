@@ -3,7 +3,7 @@ $(function(){
 	'use strict';
 	var options = {
 		'social' : ['http://facebook.com', 'http://google.com/plus', 'http://twitter.com/'],
-		'shopping': ['http://amazon.com', 'http://junglee.com']
+		'shopping': ['http://www.amazon.com/s/?field-keywords={query}', 'http://www.ebay.in/sch/i.html?_trksid=p3907.m570.l1313&_nkw={query}&_sacat=0&_from=R40']
 	};
 
 	if (typeof localStorage.options == 'undefined'){
