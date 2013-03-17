@@ -27,7 +27,7 @@ chrome.extension.onMessage.addListener(
     var splitRemainder = request.value.substring(splitTag.length+1);
     var tabs = options[splitTag];
     console.log(tabs);
-    if(typeof tabs == 'undefined'){
+    if(tabs === undefined){
         console.log('foo');
         chrome.tabs.create({url: 'http://google.com/search?q='+request.value});
     }else{
