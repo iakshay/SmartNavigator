@@ -25,12 +25,11 @@ chrome.extension.onMessage.addListener(
     request.value = request.value.toLowerCase();
     var splitTag = request.value.split(' ')[0];
     var splitRemainder = request.value.substring(splitTag.length+1);
-    var tabs = options[splitTag];
-    console.log(tabs);
-    if(tabs === undefined){
+    if(!options.hasOwnProperty(splitTag)){
         console.log('foo');
         chrome.tabs.create({url: 'http://google.com/search?q='+request.value});
     }else{
+        var tabs = options[splitTag];
         tabs.forEach(function(e){
             if(e.indexOf('{query}') >= 0){
                 e = e.split('{query}');
