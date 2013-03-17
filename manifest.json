@@ -1,5 +1,5 @@
 {
-  "name": "Say That!",
+  "name": "Smart Navigator",
   "version": "0.1",
   "permissions": [
     "tabs", "http://*/*", "https://*/*"
